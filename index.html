@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SQC Club | NIT Jalandhar</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <h2>SQC</h2>
+  <div>
+    <a href="#about">About</a>
+    <a href="#robot">Robot</a>
+    <a href="#domains">Domains</a>
+    <a href="#events">Events</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div>
+    <h1>SQC Club <span>NIT Jalandhar</span></h1>
+    <p>
+      A student-driven technical club focused on Robotics, Artificial Intelligence,
+      Machine Learning, and next-generation technologies.
+    </p>
+    <button onclick="scrollToSection('about')">Explore Club</button>
+  </div>
+</section>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p class="center-text">
+    SQC Club is one of the most active technical clubs at NIT Jalandhar.
+    From robots like <b>CHCHI</b> to AI-driven applications, we believe in learning by building.
+  </p>
+</section>
+
+<section id="robot">
+  <h2>Our Robot – CHCHI</h2>
+  <div class="grid">
+
+    <div class="card">
+      <img src="chichi-robo-dog.png" alt="CHCHI Robo Dog" class="robot-img">
+      <h3>Meet CHCHI</h3>
+      <p>
+        CHCHI is a robo-dog inspired by quadruped robotics, built to explore autonomous
+        movement, sensors, and intelligent control.
+      </p>
+    </div>
+
+    <div class="card" onclick="openModal('CHCHI is used as a learning platform for robotics, AI, ML, and embedded systems.')">
+      <h3>Purpose</h3>
+      <p>
+        A practical platform to learn robotics, electronics, AI, and system integration.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section id="history">
+  <h2>Club History</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Foundation</h3>
+      <p>SQC Club was founded in <b>2022</b> to promote hands-on technical learning.</p>
+    </div>
+    <div class="card">
+      <h3>Founder</h3>
+      <p>The club was founded by <b>Sushant</b> with a vision of innovation beyond classrooms.</p>
+    </div>
+  </div>
+</section>
+
+<section id="domains">
+  <h2>Our Domains</h2>
+  <div class="grid">
+    <div class="card">Robotics</div>
+    <div class="card">Artificial Intelligence</div>
+    <div class="card">Machine Learning</div>
+    <div class="card">Core Tech</div>
+  </div>
+</section>
+
+<section id="events">
+  <h2>Events & Activities</h2>
+  <div class="grid">
+    <div class="card" onclick="openModal('Hands-on robotics workshops every semester.')">
+      Robotics Workshops
+    </div>
+    <div class="card" onclick="openModal('Hackathons and innovation challenges.')">
+      Hackathons
+    </div>
+    <div class="card" onclick="openModal('AI/ML bootcamps for beginners.')">
+      AI/ML Bootcamps
+    </div>
+    <div class="card" onclick="openModal('Weekly coding and tech talks.')">
+      Tech Talks
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 SQC Club • NIT Jalandhar
+</footer>
+
+<!-- Modal -->
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <h3>Details</h3>
+    <p id="modalText"></p>
+    <div class="close" onclick="closeModal()">Close</div>
+  </div>
+</div>
+
+<!-- JS -->
+<script src="script.js"></script>
+</body>
+</html>
